@@ -5,8 +5,7 @@ metadata:
 spec:
   containers:
   - name: tf-demo-mnist
-    image: gcr.io/ndixita-test/tf_custom_container:20240314_051333
+    image: gcr.io/ndixita-test/tf_custom_container:20240314_183239
     resources:
       limits:
         cpu: 4
-        memory: "100Mi" 
