@@ -3,6 +3,10 @@ kind: Pod
 metadata:
   name: gke-training-pod
 spec:
+  restartPolicy: Never
   containers:
   - name: tf-demo-mnist
     image: gcr.io/ndixita-test/tf_custom_container:20240314_183239
+    securityContext:
+      runAsUser: 0
+      runAsGroup: 0
