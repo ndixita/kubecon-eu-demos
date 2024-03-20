@@ -6,4 +6,8 @@ spec:
   restartPolicy: Never
   containers:
   - name: tf-demo-mnist
-    image: gcr.io/ndixita-test/tf_custom_container:20240314_183239
+    image: gcr.io/ndixita-demo/tf:20240314_183239
+    imagePullPolicy: IfNotPresent
+    resources:
+      requests:
+        cpu: 1
